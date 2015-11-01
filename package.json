@@ -1,0 +1,29 @@
+{
+  "name": "web-blank",
+  "version": "1.0.0",
+  "description": "microscope-web blank starter-kit",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/microscopejs/web-blank.git"
+  },
+  "author": "bhtz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/microscopejs/web-blank/issues"
+  },
+  "homepage": "https://github.com/microscopejs/web-blank#readme",
+  "dependencies": {
+    "babel": "^5.8.12",
+    "body-parser": "^1.14.1",
+    "cookie-parser": "^1.4.0",
+    "ejs": "^2.3.4",
+    "microscope-web": "^0.4.0",
+    "serve-favicon": "^2.3.0",
+    "serve-static": "^1.10.0"
+  }
+}
