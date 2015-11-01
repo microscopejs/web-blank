@@ -1,11 +1,11 @@
 // sample controller filter
-export function controllerFilter(req, res, next) {
-	res.locals.isControllerFilter = true;
+export function logIp(req, res, next) {
+	console.log(req.ip);
 	next();
 };
 
 // sample action filter
-export function actionFilter(req, res, next) {
-	res.locals.isActionFilter = true;
+export function logUrl(req, res, next) {
+	console.log(req.url);
 	next();
 };

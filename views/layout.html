@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Angular</title>
+	<title>Web blank</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -39,19 +39,7 @@
 	</nav>
 
 	<div class="container">
-		<div class="jumbotron text-center">
-			<div class="container">
-				<img src="/images/microscope.png" />
-				<p class="lead">
-					microscope-web blank starter kit
-				</p>
-				<p>
-					<a href="" class="btn btn-danger btn-lg">
-					Show Github
-				</a>
-				</p>
-			</div>
-		</div>
+		{% block body %}{% endblock %}
 	</div>
 
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>

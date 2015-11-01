@@ -1,18 +1,18 @@
 // Import
 import {Controller} from 'microscope-web';
-import {controllerFilter, actionFilter} from '../filters/commonFilters';
+import {logIp, logUrl} from '../filters/commonFilters';
 
 class HomeController extends Controller {
 
 	// add some controllers filter
 	get filters(){
-		return [controllerFilter];
+		return [logIp];
 	}
 
 	// configure controller routing with callback array
 	get routes(){
 		return {
-			'get /': [actionFilter, 'index'],
+			'get /': [logUrl, 'index'],
 			'get /home/about': 'about'
 		}
 	}
@@ -20,13 +20,13 @@ class HomeController extends Controller {
 	// index action
 	// GET /
 	index(request, response){
-		response.render('index');
+		response.render('home/index');
 	}
 
 	// about action
 	// GET /home/about
 	about(request, response){
-		response.render('about');
+		response.render('home/about');
 	}
 }
 
